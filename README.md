@@ -1,1 +1,1 @@
-![Walker](mkbot%20walker.png)
+![MKBOT](mkbot.png)
