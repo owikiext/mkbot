@@ -1,0 +1,10 @@
+{
+  "_macros": {
+    "Auto Attack": true,
+    "mana potion": true,
+    "Walker": true,
+    "healing spell": true,
+    "haste spell": true,
+    "tile timer": false
+  }
+}

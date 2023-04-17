@@ -1,0 +1,117 @@
+/* keybindings.json: View -> Command Palette... -> Keyboard Shortcuts (JSON)
+
+	// Place your key bindings in this file to override the defaults
+	[
+		{
+			"key": "ctrl+numpad1",            // binding of your choice
+			"command": "workbench.action.tasks.runTask",
+			"args": "TASK_CTRL_NUM_1"
+		},
+		{
+			"key": "ctrl+numpad2",            // binding of your choice
+			"command": "workbench.action.tasks.runTask",
+			"args": "TASK_CTRL_NUM_2"
+		},
+		{
+			"key": "ctrl+numpad3",            // binding of your choice
+			"command": "workbench.action.tasks.runTask",
+			"args": "TASK_CTRL_NUM_3"
+		},
+		{
+			"key": "ctrl+numpad4",            // binding of your choice
+			"command": "workbench.action.tasks.runTask",
+			"args": "TASK_CTRL_NUM_4"
+		}
+	]
+*/
+{
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "TASK_CTRL_NUM_1",
+				"type": "shell",
+				"command": "cd ../../OxygenOT/;START OxygenOT_dx",
+				"presentation": {
+					"showReuseMessage": false,
+					"close": true
+				},
+			},
+			{
+				"label": "TASK_CTRL_NUM_2",
+				"command": "cmd",
+				"args": ["/c", "${file}"]
+			},
+			/*{
+				"label": "TASK_CTRL_NUM_2",
+				"type": "shell",
+				"command": "cd ../../;START otclient_dx;START otclient_dx",
+				"presentation": {
+					"showReuseMessage": false,
+					"close": true
+				},
+			},
+			{
+				"label": "TASK_CTRL_NUM_3",
+				"type": "shell",
+				"command": "cd ../../;START otclient_dx;START otclient_dx;START otclient_dx",
+				"presentation": {
+					"showReuseMessage": false,
+					"close": true
+				},
+			},*/
+			{
+				"label": "TASK_CTRL_NUM_4",
+				"type": "shell",
+				"command": "cd ../../OxygenOT/;START OxygenOT_dx;START OxygenOT_dx;START OxygenOT_dx;START OxygenOT_dx",
+				"presentation": {
+					"showReuseMessage": false,
+					"close": true
+				},
+			},
+		]
+	},
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\"
+		},
+		{
+			"path": "..\\..\\OxygenOT"
+		},
+		{
+			"path": "C:\\Users\\User\\Desktop\\otcv8\\otclientv8-master\\modules"
+		},
+		{
+			"path": "C:\\Users\\User\\Desktop\\otcv8"
+		},
+	],
+	"settings": {
+		"editor.fontSize": 18,
+		"editor.fontFamily": "Consolas, 'Courier New', monospace",
+		"editor.foldingHighlight": false,
+		"editor.guides.indentation": false,
+		"explorer.autoReveal": false,
+		"explorer.sortOrder": "filesFirst",
+		"workbench.tree.indent": 20,
+		"workbench.tree.expandMode": "singleClick",
+		"workbench.colorTheme": "Default Dark+",
+		"[lua]": {
+			"editor.defaultFormatter": "sumneko.lua"
+		},
+		"Lua.telemetry.enable": true,
+		"Lua.runtime.version": "LuaJIT",
+		//"workbench.tree.renderIndentGuides": "none",
+		//"explorer.compactFolders": false,
+		//"explorer.expandSingleFolderWorkspaces": false,
+		//"explorer.fileNesting.expand": false,
+		//"extensions.ignoreRecommendations": true,
+		//"workbench.editor.enablePreview": true,
+		"python.formatting.autopep8Args": [
+			"--max-line-length=200",
+			"--indent-size=4"
+		],
+	}
+}
